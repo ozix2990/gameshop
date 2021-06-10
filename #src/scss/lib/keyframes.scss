@@ -6,3 +6,12 @@
         left: 0%;
     }
 }
+@keyframes scroll {
+    from {
+        transform: translateY(-40px);
+    }
+    to {
+        transform: translateY(40px);
+    }
+    
+}

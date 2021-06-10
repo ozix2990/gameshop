@@ -1,0 +1,85 @@
+.promo {
+    width: 100%;
+    min-height: 990px;
+    background:url('../img/promo_bg.jpg') center center/cover no-repeat;
+    padding: 210px 0 30px 0;
+
+    // .promo__title
+    &__title {
+        margin-bottom: 50px;
+    }
+    // .promo__descr
+
+    &__descr {
+        margin: 0 auto;
+        width: 900px;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 72px;
+        text-align: center;
+        padding: 70px 10px;
+    }
+
+    // .promo__text
+
+    &__text {
+        font-size: 43px;
+        line-height: 50px;
+        margin-bottom: 45px;
+    }
+
+    // .promo__phone
+
+    &__phone {
+        display: block;
+        font-size: 50px;
+        line-height: 59px;
+        color:$main_color;
+        margin-bottom: 50px;
+    }
+
+    // .promo__button
+
+    &__button {
+        width: 500px;
+        height: 80px;  
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    &__scroll {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        animation: scroll 1s linear infinite alternate;
+        &_no-animate {
+            animation: none;
+        }
+    }
+    @media(max-width:992px){
+        padding-top: 100px;
+        &__title {
+            font-size: calc(35px + (80 - 35) * ((100vw - 320px) / (992 - 320)));
+            line-height: calc(50px + (99 - 50) * ((100vw - 320px) / (992 - 320))) ;
+        }
+        &__descr {
+            width: 100%;
+            border-radius: 10%;
+        }
+        &__text {
+            font-size: calc(25px + (40 - 25) * ((100vw - 320px) / (992 - 320)));
+            line-height: calc(40px + (50 - 40) * ((100vw - 320px) / (992 - 320))) ;
+        }
+        &__phone {
+            font-size: calc(25px + (50 - 25) * ((100vw - 320px) / (992 - 320)));       
+            line-height: calc(30px + (50 - 30) * ((100vw - 320px) / (992 - 320)));
+        }
+        &__button {
+            width: calc(200px + (500 - 200) * ((100vw - 320px) / (992 - 320)));
+            height: calc(50px + (80 - 50) * ((100vw - 320px) / (992 - 320)));
+            font-size: calc(15px + (40 - 15) * ((100vw - 320px) / (992 - 320)));
+        }
+    }
+}
+
