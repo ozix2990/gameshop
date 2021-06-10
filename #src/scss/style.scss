@@ -24,6 +24,9 @@ a {
         }
     }
 }
+p {
+    margin: 0;
+}
 .container {
     max-width: 1600px;
     padding: 0 10px;
@@ -31,3 +34,4 @@ a {
 }
 @import 'style-blocks/header';
 @import 'style-blocks/promo';
+@import 'style-blocks/services';

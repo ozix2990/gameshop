@@ -1,0 +1,166 @@
+.services {
+    width: 100%;
+    min-height: 900px;
+    background:url('../img/services.jpg') center (center/cover) no-repeat;
+    padding: 40px 0 100px 0;
+
+
+		// .services__title
+
+		&__title {
+            font-size: 70px;
+            line-height: 70px;
+            margin-bottom: 26px;
+		}
+
+		// .services__items
+
+		&__items {
+            width: 100%;
+            min-height: 770px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 35px 20px 65px 20px;
+            background: rgba(255, 255, 255, 0.28);
+            border-radius: 20px;
+		}
+
+		// .services__item
+
+		&__sony, &__microsoft, &__nintendo {
+            flex: 0 0 32%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            border-radius: 20px;
+		}
+
+		// .services__subtitle
+
+		&__subtitle {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 41px;
+		}
+
+		// .services__lists
+
+		&__lists {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 23px;
+            list-style-type: none;
+            padding: 0;
+		}
+
+		// .services__list
+
+		&__list{
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                max-width: 50px;
+                max-height: 50px;
+                margin-right:24px;
+            }
+        }
+        
+            // .services__aditionally
+    
+            &__aditionally {
+                margin-top: 20px;
+                flex: 0 0 100%;
+                padding: 40px 20px;
+                min-height: 190px;
+                background: rgba(0, 0, 0, 0.75);
+                border-radius: 20px;
+                img {
+                    max-width: 50px;
+                    max-height: 50px;
+                    margin-right:24px;
+                }
+            }
+    
+            // .services__clear
+    
+            &__clear {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+            &__warranty {
+                display: flex;
+                align-items: center;
+            }
+
+    @media(max-width:1200px){
+        &__sony, &__microsoft, &__nintendo {
+            flex: 0 0 49%;
+        }
+        &__sony, &__microsoft {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media(max-width:992px){
+        background:url('../img/s-mobile.jpg') center (center/cover) no-repeat;
+        .container {
+            padding-left: calc(0px + (10 - 0) * ((100vw - 320px) / (992 - 320)));
+            padding-right: calc(0px + (10 - 0) * ((100vw - 320px) / (992 - 320)));
+        }
+        &__items {
+            padding-left: calc(5px + (20 - 5) * ((100vw - 320px) / (992 - 320)));
+            padding-right: calc(5px + (20 - 5) * ((100vw - 320px) / (992 - 320)));
+        }
+        &__sony, &__microsoft, &__nintendo {
+            flex: 0 0 100%;
+        }
+        &__list {
+            flex-direction: column;
+            font-size: 30px;
+            line-height: 30px;
+            p {
+                text-align: center;
+            }
+            img {
+                max-width: 30%;
+                max-height: 100px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &__clear, &__warranty {
+            flex-direction: column;
+            align-items: center;;
+            font-size: 30px;
+            line-height: 30px;
+            p {
+                text-align: center;
+            }
+            img {
+                max-width: 20%;
+                max-height: 80px;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media(max-width:768px){
+        &__title {
+            font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (768 - 320)));
+            line-height: calc(40px + (70 - 40) * ((100vw - 320px) / (768 - 320)));
+        }
+        &__subtitle {
+            font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (768 - 320)));
+            line-height: calc(30px + (60 - 30) * ((100vw - 320px) / (768 - 320)));
+        }
+        &__list, &__clear, &__warranty {
+            font-size: calc(15px + (30 - 15) * ((100vw - 320px) / (768 - 320)));
+        }
+    }
+
+}
