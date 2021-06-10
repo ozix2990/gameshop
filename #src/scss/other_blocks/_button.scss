@@ -1,0 +1,15 @@
+.button {
+    width: 125px;
+    height: 25px;
+    background-color: $btn_color;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 12px;
+    color:$text_color;
+    transition: background-color 0.8s ease;
+    @media(min-width:992px){&:hover{
+        background-color:$btn_hov;
+    }}
+}

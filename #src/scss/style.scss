@@ -1,5 +1,7 @@
 @import 'lib/bootstrap-reboot.min.scss';
 @import 'lib/fonts.scss';
+@import 'lib/variables.scss';
+@import 'lib/keyframes.scss';
 @import 'other_blocks/descr';
 @import 'other_blocks/button';
 
@@ -7,6 +9,19 @@
 
 * {
     font-family: Roboto,sans-serif;
+}
+a {
+    color:$text_color;
+    text-decoration: none;
+    transition: color 0.8s ease;
+    @media(min-width:992px){&:hover{
+        color:$main_color;
+    }}
+    @media(max-width:992px){
+        &:hover {
+            color:$text_color;
+        }
+    }
 }
 .container {
     max-width: 1600px;

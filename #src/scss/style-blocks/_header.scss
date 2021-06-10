@@ -7,30 +7,44 @@
     // .header_vk
 
     &_vk {
+        width: 40px;
+        height: 40px;
     }
 
     // .header_instagram
 
     &_instagram {
+        width: 30px;
+        height: 30px;
     }
 
     // .header__wrapper
 
     &__wrapper {
-        display: grid;
-       grid-template: 100% / 10% 30% 30% 10% 30%;
-       align-items: center;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
     }
 
     // .header__logo
 
     &__logo {
+        flex: 0 0 45px;
+        height: 45px;
+        img {
+            width: 100%;
+        }
     }
 
     // .header__menu
 
     &__menu {
+        flex: 0 0 30%;
+        .header__social {
+            display: none;
+        }
     }
 
     // .header__items
@@ -43,43 +57,169 @@
         justify-content: space-between;
     }
 
-    // .header__item
-
-    &__item {
-    }
-
     // .header__contacts
 
     &__contacts {
+        flex: 0 0 30%;
+        text-align: center;
     }
 
     // .header__button
 
     &__button {
-    }
-
-    // .header__phone
-
-    &__phone {
+        margin-right: 16px;
     }
 
     // .header__chart
 
     &__chart {
+        display: flex;
     }
 
     // .header__calendar
 
     &__calendar {
-    }
-
-    // .header__schedule
-
-    &__schedule {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
     }
 
     // .header__social
 
     &__social {
+        flex: 0 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__mobile-menu
+
+    &__mobile-menu {
+        width: 40px;
+        height: 40px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color:#fff;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+
+}
+
+@media(max-width:1200px){
+    .header{
+        &__contacts {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        &__button {
+            margin: 0;
+            margin-top: 5px;
+        }
+        &__chart {
+            flex: 0 0 20%;
+        }
+    }
+}
+@media(max-width:992px){
+    .header {
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            right: -100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.705);
+            transition: all 0.8s ease;
+            .header__items {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                li {
+                    margin: 50px 0;
+                    font-size: 40px;
+                    a {
+                        padding: 30px 40px;
+                    }
+
+                }
+            }
+        }
+        &__menu_active {            
+            right: 0;
+            
+        }
+        &__mobile-menu {
+            display: flex;
+            span {
+                transition:  0.8s ease;
+            }
+            &_active {
+                span{
+                    
+                    &:nth-child(1) {
+                        transform: rotate(-45deg) translate(-3px,5px);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(45deg) translate(-2px,-5px);
+                    }
+                }
+            }
+        }
+        &__chart, &__contacts, &__social {
+            flex: 0 0 20%;
+        }
+    }
+}
+@media(max-width:768px){
+    .header{
+        &__social {
+            display: none;
+        }
+        &__chart, &__contacts{
+            flex: 0 0 40%;
+        }
+        &__menu {
+            .header__social {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                img {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:460px){
+    .header {
+        &__chart {
+            display: none;
+        }
+        &__contacts {
+            flex: 0 0 50%;
+        }
     }
 }
