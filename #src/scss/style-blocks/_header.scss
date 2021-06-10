@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.54) 100%);
+
+    // .header_vk
+
+    &_vk {
+    }
+
+    // .header_instagram
+
+    &_instagram {
+    }
+
+    // .header__wrapper
+
+    &__wrapper {
+        display: grid;
+       grid-template: 100% / 10% 30% 30% 10% 30%;
+       align-items: center;
+
+    }
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__menu
+
+    &__menu {
+    }
+
+    // .header__items
+
+    &__items {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+
+    // .header__item
+
+    &__item {
+    }
+
+    // .header__contacts
+
+    &__contacts {
+    }
+
+    // .header__button
+
+    &__button {
+    }
+
+    // .header__phone
+
+    &__phone {
+    }
+
+    // .header__chart
+
+    &__chart {
+    }
+
+    // .header__calendar
+
+    &__calendar {
+    }
+
+    // .header__schedule
+
+    &__schedule {
+    }
+
+    // .header__social
+
+    &__social {
+    }
+}
