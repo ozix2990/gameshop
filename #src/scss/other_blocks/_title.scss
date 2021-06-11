@@ -7,7 +7,7 @@
     text-shadow: 1px 1px 10px black;
     text-transform: uppercase;
     @media(max-width:992px){
-            font-size: calc(30px + (70 - 30) * ((100vw - 320px)/ (768 - 320)));
-            line-height: calc(40px + (70 - 40) * ((100vw - 320px)/ (768 - 320)));
+            font-size: calc(30px + (50 - 30) * ((100vw - 320px)/ (768 - 320)));
+            line-height: calc(40px + (50 - 40) * ((100vw - 320px)/ (768 - 320)));
     }
 }

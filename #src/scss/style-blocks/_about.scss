@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 990px;
     background:url('../img/about_bg.jpg') center (center/cover) no-repeat;
+    padding: 40px 0;
     // .about__title
 
     &__title {
@@ -11,11 +12,12 @@
     // .about__descr
 
     &__descr {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         min-height: 770px;
         background: rgba(82, 82, 82, 0.51);
         border-radius: 20px;
-        padding: 70px 20px;
+        padding: 70px 30px;
     }
 
     // .about__lists
@@ -29,8 +31,9 @@
     &__list {
         display: flex;
         list-style-type: none;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 30px;
+        text-align: justify;
         &:last-child {
             margin-bottom: 56px;
         }
@@ -49,11 +52,11 @@
     &__button {
         display: block;
         margin: 0 auto;
-        width: 570px;
-        height: 100px;
-        background: $btn_color;
+        width: 400px;
+        height: 80px;  
         border-radius: 30px;
-        font-size: 40px;
+        text-transform: uppercase;
+        font-size: 30px;
     }
 
     @media(max-width:992px){
@@ -62,9 +65,9 @@
             padding-right: calc(0px + (10 - 0) * ((100vw - 320px)/ (992 - 320)));
         }
         &__button {
-            width: calc(200px + (550 - 200) * ((100vw - 320px) / (992 - 320)));
-            height: calc(60px + (100 - 60) * ((100vw - 320px) / (992 - 320)));
-            font-size: calc(15px + (40 - 15) * ((100vw - 320px) / (992 - 320)));
+            width: calc(200px + (400 - 200) * ((100vw - 320px) / (992 - 320)));
+            height: calc(50px + (80 - 50) * ((100vw - 320px) / (992 - 320)));
+            font-size: calc(15px + (30 - 15) * ((100vw - 320px) / (992 - 320)));
         }
         &__list {
             font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (992 - 320)));

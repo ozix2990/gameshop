@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 900px;
     background:url('../img/services.jpg') center (center/cover) no-repeat;
-    padding: 40px 0 100px 0;
+    padding: 40px 0; 
 
 
 		// .services__title
@@ -14,7 +14,8 @@
 		// .services__items
 
 		&__items {
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
             min-height: 770px;
             display: flex;
             flex-wrap: wrap;
