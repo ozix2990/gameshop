@@ -8,8 +8,6 @@
 		// .services__title
 
 		&__title {
-            font-size: 70px;
-            line-height: 70px;
             margin-bottom: 26px;
 		}
 
@@ -150,10 +148,6 @@
         }
     }
     @media(max-width:768px){
-        &__title {
-            font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (768 - 320)));
-            line-height: calc(40px + (70 - 40) * ((100vw - 320px) / (768 - 320)));
-        }
         &__subtitle {
             font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (768 - 320)));
             line-height: calc(30px + (60 - 30) * ((100vw - 320px) / (768 - 320)));

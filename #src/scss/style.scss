@@ -2,6 +2,7 @@
 @import 'lib/fonts';
 @import 'lib/variables.scss';
 @import 'lib/keyframes.scss';
+@import 'lib/slick.scss';
 @import 'other_blocks/descr';
 @import 'other_blocks/button';
 @import 'other_blocks/title';
@@ -35,3 +36,5 @@ p {
 @import 'style-blocks/header';
 @import 'style-blocks/promo';
 @import 'style-blocks/services';
+@import 'style-blocks/about';
+@import 'style-blocks/gallery';
