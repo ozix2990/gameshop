@@ -97,8 +97,11 @@
     // .header__mobile-menu
 
     &__mobile-menu {
-        width: 40px;
-        height: 40px;
+        position: relative;
+        z-index: 10;
+        padding: 10px 10px;
+        width: 60px;
+        height: 60px;
         display: none;
         flex-direction: column;
         justify-content: center;

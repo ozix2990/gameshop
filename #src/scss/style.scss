@@ -6,6 +6,7 @@
 @import 'other_blocks/descr';
 @import 'other_blocks/button';
 @import 'other_blocks/title';
+@import 'other_blocks/up-button';
 
 
 
@@ -32,6 +33,9 @@ p {
     max-width: 1600px;
     padding: 0 10px;
     margin: 0 auto;
+}
+.hidden {
+   overflow: hidden;
 }
 @import 'style-blocks/header';
 @import 'style-blocks/promo';
